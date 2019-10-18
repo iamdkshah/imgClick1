@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp">
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/btn"
+      android:text="Click"
+      android:layout_marginBottom="40dp"
+      android:layout_marginTop="40dp"
+      android:layout_centerHorizontal="true"/>
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/imgLion"
+      android:src="@drawable/lionking"
+      android:visibility="invisible"
+      android:layout_below="@+id/btn"
+      android:layout_toLeftOf="@+id/btn"/>
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/imgTiger"
+      android:src="@drawable/tiger"
+      android:visibility="invisible"
+      android:layout_toRightOf="@+id/imgLion"
+      android:layout_below="@+id/btn"
+      android:layout_marginTop="-100dp"
+      android:layout_marginBottom="0dp"
+      android:paddingBottom="20dp"/>
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/imgSnake"
+      android:visibility="invisible"
+      android:src="@drawable/snake"
+      android:layout_below="@+id/imgLion"
+      android:layout_toLeftOf="@id/imgTiger"/>
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/imgBird"
+      android:visibility="invisible"
+      android:src="@drawable/bird"
+      android:layout_toRightOf="@+id/imgSnake"
+      android:layout_below="@+id/imgTiger"
+      android:layout_marginTop="-120dp"/>
+
+</RelativeLayout>
